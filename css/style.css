@@ -19,7 +19,7 @@ a:focus, a:active, a:visited {
 	text-align: center;
 	color: #fff;
 	height: 100vh;
-	background: #000 url(../img/1369460621_panda-26.jpg) center center no-repeat;
+	/*background: #000 url(../img/1369460621_panda-26.jpg) center center no-repeat;*/
 }
 .main-overlay {
 	position: absolute;
