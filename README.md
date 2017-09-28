@@ -13,4 +13,3 @@
 
 [Урок 9](https://mindfocusingfella.github.io/lesson_9/) - сайт из урока 7 на bootstrap
 
-[Урок 12](https://mindfocusingfella.github.io/lesson_12/) - рабочая папка с пустыми файлами :)
