@@ -3,4 +3,4 @@
 # Александр Воробьёв
 My first published site
 
-[Урок 9](MindFocusingFella.github.io/lesson_9/)
+[Урок 9](https://mindfocusingfella.github.io/lesson_9/ "Описание")
