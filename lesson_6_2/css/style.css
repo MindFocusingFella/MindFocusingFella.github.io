@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box;
+}
+
+.box {
+	position: fixed;
+	left: 50%;
+	margin-left: -150px;
+	top: 50%;
+	margin-top: -200px;
+	height: 400px;
+	width: 300px;
+	border: 2px solid #aeaeae;
+	padding: 20px 30px;
+	overflow: hidden;
+	text-align: justify;
+}
+
+p {
+	margin: 0 auto;
+}
