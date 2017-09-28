@@ -1,0 +1,27 @@
+body {
+	text-align: center;
+	font-family: Arial;
+}
+
+p {
+	margin-bottom: 0px;
+}
+
+.header {
+	text-transform: uppercase;
+	margin-top: 139px;
+	font-weight: 300;
+	font-size: 36px;
+}
+.features {
+	margin-top: 114px;
+}
+.feature-icon {
+	height: 136px;
+}
+.features p{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 18px;
+	vertical-align: bottom;
+}
