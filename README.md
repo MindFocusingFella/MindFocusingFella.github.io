@@ -13,3 +13,5 @@
 
 [Урок 9](https://mindfocusingfella.github.io/lesson_9/) - сайт из урока 7 на bootstrap
 
+[Урок 13](https://mindfocusingfella.github.io/lesson_13/) - Pixel Perfect вёрстка
+
