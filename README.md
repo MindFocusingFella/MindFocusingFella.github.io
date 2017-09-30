@@ -1,4 +1,7 @@
 # Александр Воробьёв
+
+##[Практика](https://mindfocusingfella.github.io/project_X/)
+
 Домашние задания
 
 [Урок 4](https://mindfocusingfella.github.io/lesson_4/) - HTML5
