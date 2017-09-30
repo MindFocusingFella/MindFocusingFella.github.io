@@ -1,12 +1,12 @@
-html {
+body {
   font-family: Arial;
+  background: url(../img/bg.jpg) repeat;
 }
 
 .body {
   width: 570px;
   height: 570px;
   margin: 0 auto;
-  background: url(../img/bg.jpg) repeat-y;
   text-align: center;
 }
 
