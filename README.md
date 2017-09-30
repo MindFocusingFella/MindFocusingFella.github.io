@@ -1,4 +1,4 @@
-# Александр Воробьёв ДЗ
+# Александр Воробьёв 
 
 [Практика](https://mindfocusingfella.github.io/project_X/)
 
