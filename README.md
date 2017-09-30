@@ -1,6 +1,6 @@
 # Александр Воробьёв
 
-##[Практика](https://mindfocusingfella.github.io/project_X/)
+[Практика](https://mindfocusingfella.github.io/project_X/)
 
 Домашние задания
 
