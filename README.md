@@ -16,5 +16,5 @@
 
 [Урок 13](https://mindfocusingfella.github.io/lesson_13/) - Pixel Perfect вёрстка
 
-[Урок 14](https://mindfocusingfella.github.io/lesson_14/)
+[Урок 14](https://mindfocusingfella.github.io/lesson_14/) - подключение шрифтов
 
