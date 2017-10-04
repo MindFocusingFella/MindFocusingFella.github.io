@@ -73,6 +73,13 @@ button, input, a {
 section {
   padding: 10rem 0;
 }
+.section-header {
+  margin-top: 10rem;
+  margin-bottom: 13rem;
+  text-align: center;
+  .bold;
+  font-size: 3.6rem;
+}
 
 
 /* main screen */
@@ -163,6 +170,11 @@ section {
       margin-top: 1.5rem;
     }
   }
+  &-form-footer {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    font-size: 1.2rem;
+  }
 }
 .header {
   height: 7rem;
@@ -189,9 +201,63 @@ section {
   }
 }
 
+
+/* Оформление секции с преимуществами */
+
+.features {
+  &-block {
+    text-align: center;
+    h3 {
+      margin-top: 6rem;
+      .bold;
+      font-size: 2rem;
+    }
+    p {
+      display: inline-block;
+      width: 80%;
+      margin-top: 3.5rem;
+      font-size: 1.4rem;
+    }
+  }
+  &-img {
+    height: 7rem;
+    img {
+      margin: 0 auto;
+    }
+  }
+
+}
+.slick-active {
+  outline: none;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.prev {
+  left: 0;
+  background: url(../img/features/left-arrow.svg) center no-repeat;
+  background-size: 70%;
+}
+.next {
+  right: 0;
+  background: url(../img/features/right-arrow.svg) center no-repeat;
+  background-size: 70%;
+}
+
+
 @media (max-width: 991px) {
   .main {
-    background-position: top right;
+    background-position: top left;
+    &-form-footer {
+      margin-left: 0rem;
+      text-align: center;
+    }
   }
   .phone-block {
     text-align: center;
@@ -210,15 +276,41 @@ section {
     background-position: top left;
     h1 {
       font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    &-subtitle {
+      margin-bottom: 2.3rem;
+    }
+    &-trigger {
+      margin-top: 2.5rem;
+    }
+    &-form {
+      padding: 2rem 2.5rem;
     }
   }
   .header {
     text-align: center;
     &-btn {
-      margin-bottom: 4rem;
+      margin-bottom: 4.5rem;
     }
   }
   .wrap-block {
     text-align: center;
+  }
+  .section-header {
+    margin-top: 5rem;
+    margin-bottom: 5.5rem;
+  }
+  .features-block h3 {
+    margin-top: 3.5rem;
+  }
+  .arrow {
+    top: 15%;
+  }
+  .prev {
+    left: 15%;
+  }
+  .next {
+    right: 15%;
   }
 }
