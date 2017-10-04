@@ -1,7 +1,8 @@
 body {
   text-align: center;
 }
+
 .fotorama {
   display: inline-block;
-  transform: translateY(25%);
+  margin-top: 150px;
 }
