@@ -50,7 +50,7 @@ body {
 a:hover {
   text-decoration: none;
 }
-button, input, a {
+button, input, a, textarea {
   &:focus {
   outline: none;
   }
@@ -243,11 +243,66 @@ section {
   left: 0;
   background: url(../img/features/left-arrow.svg) center no-repeat;
   background-size: 70%;
+  z-index: 1; /* чтобы стрелочки пропадали под модальным окном */
 }
 .next {
   right: 0;
   background: url(../img/features/right-arrow.svg) center no-repeat;
   background-size: 70%;
+  z-index: 1;
+}
+
+
+
+/* Оформление модальных окон */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  &-content {
+    position: fixed;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    background-color: @white;
+    padding: 3.5rem 5rem 5rem 5rem;
+  }  
+  h4 {
+    margin: 0;
+    .bold;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+  &-form {
+    padding: 0;
+    textarea {
+      margin-bottom: 15px;
+      width: 100%;
+      border: 1px solid @input-border;
+      border-radius: 5px;
+      padding: 1rem 1rem;
+    }
+  }
+  &-close {
+    position: absolute;
+    top: -1.5rem;
+    right: -2rem;
+    width: 2rem;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-size: 3rem;
+    color: @white;
+  }
 }
 
 
@@ -292,18 +347,32 @@ section {
     text-align: center;
     &-btn {
       margin-bottom: 4.5rem;
+    } 
+    .wrap-block {
+      text-align: center;
     }
   }
-  .wrap-block {
-    text-align: center;
+  .features {  
+    .section-header {
+      margin-top: 5rem;
+      margin-bottom: 5.5rem;
+    }
+    &-block h3 {
+      margin-top: 3.5rem;
+    }
+  } 
+  .popup {
+    &-form {
+      padding: 0;
+    }
+    &-content {
+      width: 73%;
+    }
   }
-  .section-header {
-    margin-top: 5rem;
-    margin-bottom: 5.5rem;
-  }
-  .features-block h3 {
-    margin-top: 3.5rem;
-  }
+
+
+
+  /* Поднять стрелочки на маленьких экранах к иконкам  */ 
   .arrow {
     top: 15%;
   }
@@ -313,4 +382,25 @@ section {
   .next {
     right: 15%;
   }
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+  .popup-content {
+    width: 85%;
+    h4 {
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    &-form {
+      width: 100%;
+      padding: 0;
+    }
+  } 
 }
