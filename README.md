@@ -21,3 +21,5 @@
 [Урок 15](https://mindfocusingfella.github.io/lesson_15/) - псевдоклассы и псевдоэлементы
 
 [Урок 16](https://mindfocusingfella.github.io/lesson_16/) - слайдер футурама
+
+[Урок 17](https://mindfocusingfella.github.io/lesson_17/) - всплывающие окна
