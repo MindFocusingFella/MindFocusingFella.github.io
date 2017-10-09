@@ -23,3 +23,5 @@
 [Урок 16](https://mindfocusingfella.github.io/lesson_16/) - слайдер футурама
 
 [Урок 17](https://mindfocusingfella.github.io/lesson_17/) - всплывающие окна
+
+[Урок 18.1](https://mindfocusingfella.github.io/lesson_18_1/) и [Урок 18.2](https://mindfocusingfella.github.io/lesson_18_2/) - табы и аккордеоны
