@@ -68,6 +68,41 @@ button, input, a, textarea {
     background-color: darken(@btn-color, 5%);
   }
 }
+.mobile-btn {
+  display: none;
+}
+
+/* Оформление форм */
+.form {
+  /* Поле для ввода */
+  &-input {
+    display: block;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    border: 1px solid @input-border;
+    border-radius: 5px;
+    width: 100%;
+    height: 52px;
+  }
+  /* Подписи к полям */
+  label {
+    // display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    background-color: @white;
+  }
+  /* Кнопка отправить заявку */
+  &-btn {
+    display: block;
+    width: 100%;
+    height: 6.5rem;
+    font-size: 1.6rem;
+  }
+}
+
 
 /* Typography */
 section {
@@ -146,33 +181,6 @@ section {
     &-header {
       font-size: 1.8rem;
       margin-bottom: 4rem;
-    }
-    /* Поле для ввода */
-    input {
-      display: block;
-      margin: 2rem 0;
-      padding: 0 1rem;
-      border: 1px solid @input-border;
-      border-radius: 5px;
-      width: 100%;
-      height: 52px;
-    }
-    /* Подписи к полям */
-    label {
-      // display: inline-block;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      padding: 0.5rem;
-      font-size: 1.3rem;
-      background-color: @white;
-    }
-    /* Кнопка отправить заявку */
-    &-btn {
-      display: block;
-      width: 100%;
-      height: 6.5rem;
-      font-size: 1.6rem;
     }
     /* Подпись под кнопкой */
     small {
@@ -268,6 +276,12 @@ section {
 /* Оформление секции с ценами */
 .price {
   background: @icons-color url(../img/prices/prices-bg.jpg) center;
+  .section-header {
+    margin-bottom: 9rem;
+    p {
+      margin-top: 4rem;
+    }
+  }
   &-btn-wrapper {
     text-align: right;
     height: 6.5rem;
@@ -335,6 +349,7 @@ section {
 
 /* Секция с отзывами */
 .feedback {
+  position: relative;
   background: url(../img/feedback/feedback-bg.jpg) center no-repeat;
   background-size: cover;
   .section-header {
@@ -345,6 +360,13 @@ section {
     background-color: @white;
     box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
     padding: 5.5rem 6rem;
+    .slick-dots {
+      position: absolute;
+      right: 0;
+    }
+    &-item {
+      outline: none;
+    }
     &-btn {
       position: absolute;
       top: 50%;
@@ -397,6 +419,33 @@ section {
   }
   &-next-btn {
     right: -4rem;
+  }
+  /* Форма обратной связи */
+  &-form {
+    margin-top: 5rem;
+    padding: 4rem 10rem 0 10rem;
+    text-align: center;
+  }
+  h3 {
+    .bold;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  label {
+    transform: translate(-50%, 6px);
+  }
+  &-btn {
+    margin: 0 auto;
+    margin-top: 1rem;
+    max-width: 25rem;
+  }
+  &-footer {
+    display: none;
+  }
+  .hand {
+    position: absolute;
+    bottom: 0;
+    max-width: 30rem;
   }
 }
 
@@ -454,10 +503,18 @@ section {
 }
 
 
+@media (max-width: 1199px) {
+  .feedback-text {
+    padding: 1.5rem 3rem;
+  }
+  .feedback-form {
+    padding: 3rem 5rem;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .price-btn-wrapper .price-btn {
     font-size: 1.5rem;
-
   }
   .price-block {
     h4 {
@@ -469,6 +526,11 @@ section {
     &-btn {
       margin-top: 2rem;
     }
+  }
+  .feedback-slider {
+    margin: auto;
+    padding: 4.5rem 2.5rem;
+    width: 95%;
   }
 }
 
@@ -503,6 +565,25 @@ section {
       margin-bottom: 3rem;
     }
   } 
+  .feedback {
+    .fotorama {
+      margin-bottom: 3rem;
+    }
+    &-form {
+      label {
+        transform: translate(-50%, -50%);
+      }
+    }
+    &-prev-btn {
+      left: 0;
+    }
+    &-next-btn {
+      right: 0;
+    }
+    .hand {
+      display: none;
+    }
+  } 
 }
 
 @media (max-width: 767px) {
@@ -531,6 +612,7 @@ section {
       text-align: center;
     }
   }
+
   .features {  
     .section-header {
       margin-top: 5rem;
@@ -569,18 +651,81 @@ section {
 
 
 @media (max-width: 480px) {
+  .desktop-btn {
+    display: none;
+  }
+  .mobile-btn {
+    display: block;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+
+
+
+  
+  .features {
+    .section-header {
+      font-size: 2.4rem;
+      margin-top: 1rem;
+    }
+    &-block {
+      p {
+        margin-top: 2rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+
+  section.price {
+    padding: 4rem 0 0 0;
+  }
   .price {
+    .section-header {
+      margin-bottom: 0rem;
+      p {
+        margin-top: 1rem;
+      }
+    }
     &-block {
       .price-features{
         font-size: 1.6rem;
       }
     }
   &-btn-wrapper {
+    margin: 3rem 0;
     .price-btn {
         font-size: 1.5rem;
       }
     }
-  }        
+  }    
+
+  .feedback {
+    .section-header {
+      margin-bottom: 2rem;
+    }
+    &-slider {
+      padding: 5rem 1rem;
+      .slick-dots {
+        bottom: -40px;
+        font-size: 2rem;
+      }
+    }
+    &-form {
+      margin-top: 0;
+      h3 {
+        font-size: 1.6rem;
+      }
+    }
+    &-footer {
+      margin-top: 4rem;
+      display: block;
+      font-size: 1.2rem;
+    }
+  }
+
   .popup-content {
     width: 85%;
     h4 {
@@ -594,4 +739,6 @@ section {
       padding: 0;
     }
   }
+
+
 }
