@@ -44,6 +44,9 @@ textarea:focus {
 .button:hover {
   background-color: #e5a202;
 }
+.mobile-header {
+  display: none;
+}
 .mobile-btn {
   display: none;
 }
@@ -412,6 +415,71 @@ section {
   bottom: 0;
   max-width: 30rem;
 }
+/* Секция "схема работы" */
+.scheme {
+  padding: 10rem 0 0 0;
+  background: url(../img/scheme/scheme-bg.jpg) bottom -10rem right -15rem no-repeat;
+  background-size: 65rem;
+}
+.scheme-block {
+  min-height: 30rem;
+  color: #1a1820;
+}
+.scheme-block img {
+  min-height: 9rem;
+}
+.scheme-block h3 {
+  font-size: 2.2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.scheme-block p {
+  font-size: 1.7rem;
+  line-height: 1.059;
+}
+/* 100% включено */
+.all-inclusive {
+  background-color: #f5f5f5;
+}
+.all-inclusive .section-header-green h2 {
+  font-size: 4.8rem;
+  color: #46b814;
+  margin-bottom: 4rem;
+}
+.all-inclusive .media {
+  min-height: 15rem;
+}
+.all-inclusive .media-left {
+  padding-right: 1.5rem;
+}
+.all-inclusive .media .circle-border {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.3rem;
+  border: 2px solid #46b814;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+}
+.all-inclusive .media .circle-border .circle {
+  display: inline-block;
+  background-color: #46b814;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: #ffffff;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2rem;
+}
+.all-inclusive .media h4 {
+  margin-top: 1.7rem;
+  margin-bottom: 0;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 1.6rem;
+}
+.all-inclusive .media p {
+  font-size: 1.3rem;
+}
 /* Оформление модальных окон */
 .popup {
   display: none;
@@ -568,6 +636,28 @@ section {
   .features-block h3 {
     margin-top: 3.5rem;
   }
+  .feedback {
+    padding-bottom: 1rem;
+  }
+  .scheme {
+    padding-top: 2rem;
+    background: none;
+  }
+  .scheme .section-header {
+    margin-bottom: 4rem;
+  }
+  .scheme p {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+  .scheme-block {
+    text-align: center;
+    min-height: auto;
+    margin-bottom: 5rem;
+  }
+  .scheme-block p {
+    margin-top: 1rem;
+  }
   .popup-form {
     padding: 0;
   }
@@ -595,6 +685,34 @@ section {
   section {
     padding: 4rem 0;
   }
+  .mobile-header {
+    display: block;
+    background-color: #ffffff;
+  }
+  .mobile-header .container-fluid {
+    padding: 0;
+  }
+  .mobile-header .phone-block {
+    text-align: center;
+  }
+  .mobile-header .phone-block .phone-link {
+    font-size: 1.4rem;
+    height: 6rem;
+    line-height: 6rem;
+  }
+  .mobile-header .wrap {
+    height: 6rem;
+  }
+  .mobile-header .wrap-block {
+    text-align: center;
+  }
+  .mobile-header .wrap button {
+    margin-bottom: 0rem;
+    padding: 1rem 2rem;
+  }
+  .main .desktop {
+    display: none;
+  }
   .features .section-header {
     font-size: 2.4rem;
     margin-top: 1rem;
@@ -611,6 +729,9 @@ section {
   }
   .price .section-header p {
     margin-top: 1rem;
+  }
+  .price-block {
+    padding: 1.5rem 2rem;
   }
   .price-block .price-features {
     font-size: 1.6rem;
@@ -642,8 +763,15 @@ section {
     display: block;
     font-size: 1.2rem;
   }
+  .all-inclusive .section-header {
+    margin-bottom: 4rem;
+  }
+  .all-inclusive .media {
+    min-height: 8rem;
+  }
   .popup-content {
     width: 85%;
+    padding: 3.5rem;
   }
   .popup-content h4 {
     margin-bottom: 5px;

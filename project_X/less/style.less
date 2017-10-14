@@ -68,6 +68,9 @@ button, input, a, textarea {
     background-color: darken(@btn-color, 5%);
   }
 }
+.mobile-header {
+  display: none;
+}
 .mobile-btn {
   display: none;
 }
@@ -450,6 +453,76 @@ section {
 }
 
 
+/* Секция "схема работы" */
+.scheme {
+  padding: 10rem 0 0 0;
+  background: url(../img/scheme/scheme-bg.jpg) bottom -10rem right -15rem no-repeat;
+  background-size: 65rem;
+  &-block {
+    min-height: 30rem;
+    color: #1a1820;
+    img {
+      min-height: 9rem;
+    }
+    h3 {
+      font-size: 2.2rem;
+      .bold;
+    }
+    p {
+      font-size: 1.7rem;
+      line-height: 1.059;
+    }
+  }
+}
+
+
+/* 100% включено */
+.all-inclusive {
+  background-color: @bg-light;
+  .section-header-green {
+    h2 {
+      font-size: 4.8rem;
+      color: @icons-color;
+      margin-bottom: 4rem;
+    }
+  }
+  .media {
+    min-height: 15rem;
+    &-left {
+      padding-right: 1.5rem;
+    }
+    .circle-border {
+      display: inline-block;
+      width: 5rem;
+      height: 5rem;
+      padding: 0.3rem;
+      border: 2px solid @icons-color;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 4rem;
+      .circle {
+        display: inline-block;
+        background-color: @icons-color;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        color: @white;
+        .bold;
+        font-size: 2rem;
+      }
+    }
+    h4 {
+      margin-top: 1.7rem;
+      margin-bottom: 0;
+      .bold;
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
 
 /* Оформление модальных окон */
 .popup {
@@ -583,7 +656,7 @@ section {
     .hand {
       display: none;
     }
-  } 
+  }
 }
 
 @media (max-width: 767px) {
@@ -621,7 +694,32 @@ section {
     &-block h3 {
       margin-top: 3.5rem;
     }
-  } 
+  }
+
+  .feedback {
+    padding-bottom: 1rem;
+  }
+
+  .scheme {
+    padding-top: 2rem;
+    background: none;
+    .section-header {
+      margin-bottom: 4rem;
+    }
+    p {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+    }
+    &-block {
+      text-align: center;
+      min-height: auto;
+      margin-bottom: 5rem;
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
+
   .popup {
     &-form {
       padding: 0;
@@ -662,8 +760,38 @@ section {
     padding: 4rem 0;
   }
 
+  .mobile-header {
+    display: block;
+    background-color: @white;
+    .container-fluid {
+      padding: 0;
+    }
+    .phone-block {
+      text-align: center;
+      .phone-link {
+        font-size: 1.4rem;
+        height: 6rem;
+        line-height: 6rem;
+      }
+    }
+    .wrap {
+      height: 6rem;
+      &-block {
+        text-align: center;
+      }
+      button {
+        margin-bottom: 0rem;
+        padding: 1rem 2rem;
+      }
+    }
 
+  }
 
+  .main {
+    .desktop {
+      display: none;
+    }
+  }
   
   .features {
     .section-header {
@@ -690,6 +818,7 @@ section {
       }
     }
     &-block {
+      padding: 1.5rem 2rem;
       .price-features{
         font-size: 1.6rem;
       }
@@ -725,9 +854,18 @@ section {
       font-size: 1.2rem;
     }
   }
+  .all-inclusive {
+    .section-header {
+      margin-bottom: 4rem;
+    }
+    .media {
+      min-height: 8rem;
+    }
+  }
 
   .popup-content {
     width: 85%;
+    padding: 3.5rem;
     h4 {
       margin-bottom: 5px;
     }
