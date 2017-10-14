@@ -29,3 +29,5 @@
 [Урок 19](https://mindfocusingfella.github.io/lesson_19/) - анимация
 
 [Урок 20](https://mindfocusingfella.github.io/lesson_20/) - видеофон
+
+[Урок 21](https://mindfocusingfella.github.io/lesson_21/) - параллакс эффекты
