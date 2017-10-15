@@ -31,3 +31,5 @@
 [Урок 20](https://mindfocusingfella.github.io/lesson_20/) - видеофон
 
 [Урок 21](https://mindfocusingfella.github.io/lesson_21/) - параллакс эффекты
+
+[Урок 22](https://mindfocusingfella.github.io/lesson_22/) - гео-карты

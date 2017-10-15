@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+  font-family: 'Open Sans';
+  font-size: 10px;
+}
+.container-fluid {
+  padding: 0;
+}
+// .contacts-box {
+//   position: fixed;
+//   top: 0;
+// }
+.contacts {
+  display: inline-block; /* !!!!!!!!!!!!!!!! без этого атрибута карты пропадали*/
+  text-align: center;
+  position: fixed;
+  top: 0;
+  height: 450px;
+  padding: 7rem;
+  background-color: #c60b0b;
+  color: white;
+}
+.contacts h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.contacts p {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+.contacts a {
+  font-size: 1.8rem;
+  color: white;
+}
+.footer {
+  margin-top: 1.5rem;
+}
+.media-body {
+  font-size: 1.6rem;
+}
+.certificate {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.wrapper {
+  display: table;
+  text-align: center;
+  height: 76px;
+  width: 100%;
+}
+.wrap-block {
+  display: table-cell;
+  vertical-align: middle; 
+}
+.info {
+  text-align: right;
+}
+.phone {
+  font-size: 2.2rem;
+}
+.address {
+  font-size: 1.4rem;
+}
