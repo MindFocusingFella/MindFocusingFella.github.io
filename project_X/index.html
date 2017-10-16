@@ -635,6 +635,68 @@
       <img src="img/problems/woman.png" alt="" class="problems-woman">
     </section>
 
+    <section class="materials">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Материалы</h2>
+          <p>Мы работаем только качественными, проверенными временем материалами, следующих производителей:</p> 
+        </div>
+
+        <div class="materials-slider">
+
+          <div class="materials-block">
+            <div class="materials-img">
+              <picture>
+                <img src="img/materials/knauf.png" alt="knauf">
+              </picture>
+            </div>
+            <h3>Knauf</h3>
+            <p>МП-75 <strong>245</strong> руб/меш<br><br></p>
+            <a class="materials-link" href="#">Сертификат</a>
+          </div>
+
+          <div class="materials-block">
+            <div class="materials-img">
+              <picture>
+                <img src="img/materials/volma-1.png" alt="volma">
+              </picture>
+            </div>
+            <h3>Volma</h3>
+            <p>Аква слой <strong>245</strong> руб/меш<br>Гипс актив <strong>245</strong> руб/меш</p>
+            <a class="materials-link" href="#">Сертификат</a>
+          </div>
+
+          <div class="materials-block">
+            <div class="materials-img">
+              <picture>
+                <img src="img/materials/forman-1.png" alt="forman">
+              </picture>
+            </div>
+            <h3>Forman</h3>
+            <p>Аква слой <strong>245</strong> руб/меш<br>Гипс актив <strong>245</strong> руб/меш</p>
+            <a class="materials-link" href="#">Сертификат</a>
+          </div>
+
+          <div class="materials-block">
+            <div class="materials-img">
+              <picture>
+                <img src="img/materials/ceresit-2.png" alt="ceresit">
+              </picture>
+            </div>
+            <h3>Ceresit</h3>
+            <p>Аква слой <strong>245</strong> руб/меш<br>Гипс актив <strong>245</strong> руб/меш</p>
+            <a class="materials-link" href="#">Сертификат</a>
+          </div>
+        </div> <!-- materials-slider -->
+
+        <p class="post-scriptum">Вы можете приобрести материалы по оптовым ценам на сайте <a class="materials-link" href="#">gicema.ru</a> или по телефону <strong>+7 495 790 69 90</strong></p>
+
+      </div>
+
+    </section>
+
 
     <!-- Модальные окна -->
     <!-- Получить консультацию -->
@@ -728,6 +790,32 @@
               }
             }
            ] 
+        });
+        /*Слайдер с материалами*/
+        $('.materials-slider').slick({
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                prevArrow: '<button class="prev arrow"></button>',
+                nextArrow: '<button class="next arrow"></button>',
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '<button class="prev arrow"></button>',
+                nextArrow: '<button class="next arrow"></button>',
+              }
+            }
+          ]
         });
       });
     </script>
